@@ -14,7 +14,8 @@ pipeline {
             steps {
                 echo 'Running tests...'
                 // Exemple de test (à adapter à ton projet)
-                bat 'python --version'
+                bat 'python test_app.py'
+
             }
         }
 
