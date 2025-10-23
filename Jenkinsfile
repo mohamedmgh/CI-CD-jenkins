@@ -18,7 +18,7 @@ pipeline {
 
         stage('Deploy') {
             steps {
-                echo '🚀 Déploiement terminé (simulation)...'
+                echo '🚀 Déploiement terminé (simulation)sss...'
             }
         }
     }
