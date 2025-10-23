@@ -9,7 +9,7 @@ pipeline {
                 echo 'Builds...'
             }
         }
-        stage('Test') {
+        stage('TestS') {
             steps {
                 bat 'python test_app.py'
             }
