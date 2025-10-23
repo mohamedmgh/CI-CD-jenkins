@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo '🔧 Build en cours...'
+                echo '🔧 Build en coursss...'
             }
         }
         stage('Test') {
