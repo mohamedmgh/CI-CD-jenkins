@@ -1,2 +1,1 @@
-print("Tests OK ✅")
-
+print("Tests OK")
