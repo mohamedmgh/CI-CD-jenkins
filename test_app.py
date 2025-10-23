@@ -1,2 +1,2 @@
 print("Tests OK---")
-print("hh,test jenkins")
+print("hh,test jenkins,automatique")
