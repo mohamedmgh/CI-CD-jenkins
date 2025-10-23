@@ -11,7 +11,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                echo '🧪 Test...'
+                echo '🧪 Tests...'
                 bat 'python test_app.py'
             }
         }
