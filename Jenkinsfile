@@ -1,18 +1,34 @@
 pipeline {
     agent any
-    triggers {
-        pollSCM('* * * * *') // toutes les minutes
-    }
+
     stages {
         stage('Build') {
             steps {
-                echo 'Builds...'
+                echo '🔧 Build en cours...'
             }
         }
-        stage('TestS') {
+
+        stage('Test') {
             steps {
+                echo '🧪 Exécution des tests...'
+                bat 'python --version'
                 bat 'python test_app.py'
             }
+        }
+
+        stage('Deploy') {
+            steps {
+                echo '🚀 Déploiement terminé (simulation)...'
+            }
+        }
+    }
+
+    post {
+        success {
+            echo '✅ Pipeline exécutée avec succès.'
+        }
+        failure {
+            echo '❌ Une erreur est survenue.'
         }
     }
 }
