@@ -1,17 +1,16 @@
 pipeline {
     agent any
     triggers {
-        githubPush()
+        pollSCM('* * * * *') // toutes les minutes
     }
     stages {
         stage('Build') {
             steps {
-                echo '🔧 Build en cours...'
+                echo 'Build...'
             }
         }
         stage('Test') {
             steps {
-                echo '🧪 Testss..'
                 bat 'python test_app.py'
             }
         }
