@@ -10,7 +10,7 @@ pipeline {
 
         stage('Test') {
             steps {
-                echo '🧪 Exécution des tests...'
+                echo '🧪 Exécution des testsss...'
                 bat 'python --version'
                 bat 'python test_app.py'
             }
